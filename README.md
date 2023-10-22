@@ -1,1 +1,1 @@
-# meetingProject
+# giftShopProject
