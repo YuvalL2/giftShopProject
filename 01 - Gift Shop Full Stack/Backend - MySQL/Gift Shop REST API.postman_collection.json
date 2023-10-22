@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "f1104a71-e070-4cd3-9bee-f0dfe35c8998",
+		"name": "Gift Shop REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all audience",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/audience",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"audience"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get gifts by audience",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/gifts-by-audience/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"gifts-by-audience",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add gift",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"audienceId\": 3,\r\n    \"name\": \"Chess\",\r\n    \"description\": \"Cool Chess\",\r\n    \"price\": 50,\r\n    \"discount\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/gifts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"gifts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete gift",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"audienceId\": 3,\r\n    \"name\": \"Chess\",\r\n    \"description\": \"Cool Chess\",\r\n    \"price\": 50,\r\n    \"discount\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/gifts/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"gifts",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

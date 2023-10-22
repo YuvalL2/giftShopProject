@@ -1,0 +1,18 @@
+.Card {
+	border: 1px solid;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    text-align: right;
+}
+
+.Card > button {
+    float: left;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
